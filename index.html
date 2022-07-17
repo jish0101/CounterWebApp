@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="index.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1,
+        h2 {
+            margin: 2rem;
+            opacity: .6;
+            color: blue;
+            font-size: 3rem;
+        }
+
+        div {
+            position: relative;
+            display: flex;
+            max-width: 100%;
+            background-color: #E5E5E5;
+            padding: 6rem;
+            margin: 8rem;
+            padding-bottom: 4rem;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 1 0px;
+        }
+
+        .btn {
+            max-width: 10em;
+            margin: 2rem;
+            margin-bottom: 0rem;
+            padding: 1rem 2rem;
+            border: none;
+            text-transform: uppercase;
+            font-size: 1.2em;
+            border-radius: .5em;
+            color: white;
+            background-color: black;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #849ED7;
+            opacity: .9;
+        }
+
+        @media screen and (max-width: 850px) {
+
+            body{
+                background-color: #E5E5E5;
+            }
+
+            div{
+                margin: 0;
+                min-width: 100%;
+            }
+        }
+
+
+
+    </style>
+    <title>Counter App</title>
+</head>
+
+<body>
+    <div>
+        <h1>Counter</h1>
+        <h2 id="count">0</h2>
+        <button class="btn" onclick="increment()">Increase</button>
+        <button class="btn" onclick="decrement()">Decrease</button>
+        <button class="btn" onclick="reset()">Reset</button>
+    </div>
+
+</body>
+
+</html>
